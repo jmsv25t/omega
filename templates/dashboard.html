@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salões - Beauty Wave</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="dark-section" style="text-align: center; padding: 10px;">
+        <h1 class="header-title">Beauty Wave</h1>
+        <p>Olá, Usuário! Encontre o salão ideal para você.</p>
+    </div>
+
+    <div style="padding: 20px;">
+        <h2>Salões Disponíveis</h2>
+        <p>Este é o espaço para **especificações** e detalhes dos salões cadastrados.</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="card" onclick="window.location.href='{{ url_for('funcionarios') }}';">
+            <h3>Salão Brilho Dourado ✨</h3>
+            <p style="color: var(--text-light);">Local: Centro, São Paulo</p>
+            <p>Especialidade: Cabelos e Penteados.</p>
+            <p class="accent-text">Ver Funcionários</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='{{ url_for('funcionarios') }}';">
+            <h3>Nail Art Profissional 💅</h3>
+            <p style="color: var(--text-light);">Local: Jardins, São Paulo</p>
+            <p>Especialidade: Manicure e Pedicure.</p>
+            <p class="accent-text">Ver Funcionários</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='{{ url_for('funcionarios') }}';">
+            <h3>Barbearia Clássica 🧔</h3>
+            <p style="color: var(--text-light);">Local: Vila Mariana, São Paulo</p>
+            <p>Especialidade: Barba e Corte Masculino.</p>
+            <p class="accent-text">Ver Funcionários</p>
+        </div>
+    </div>
+</body>
+</html>
