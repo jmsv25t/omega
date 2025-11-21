@@ -12,7 +12,8 @@
     </div>
     
     <div class="form-container">
-        <form action="{{ url_for('dashboard') }}" method="POST">
+        <form action="{{ url_for('cadastro') }}" method="POST">
+            
             <label for="tipo_conta">Tipo de Conta:</label>
             <select id="tipo_conta" name="tipo_conta" required>
                 <option value="cliente">Cliente</option>
@@ -40,7 +41,12 @@
 
             <button type="submit" class="main-button">Cadastrar e Entrar</button>
         </form>
-        <p style="text-align: center; margin-top: 15px;">Já é cadastrado? <a href="{{ url_for('login') }}">Faça Login</a></p>
+
+        <p style="text-align: center; margin-top: 15px;">
+            Já é cadastrado? <a href="{{ url_for('login') }}">Faça Login</a>
+        </p>
     </div>
 </body>
 </html>
+
+
