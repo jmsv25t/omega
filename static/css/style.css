@@ -109,3 +109,41 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
 .card:hover {
     transform: translateY(-5px);
 }
+/* style.css (Adicionar ao final) */
+
+/* Navigation Bar (Preto com Dourado) */
+.navbar {
+    background-color: var(--primary-color); /* Preto */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: var(--accent-color); /* Dourado */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: var(--secondary-color); /* Branco */
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color); /* Dourado no hover */
+}
+
+/* Botão de Chamada para Ação na Navbar */
+.navbar .cta-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
