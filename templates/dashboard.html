@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="dark-section" style="text-align: center; padding: 10px;">
-        <h1 class="header-title">Beauty Wave</h1>
-        <p>Olá, Usuário! Encontre o salão ideal para você.</p>
+    <div class="navbar">
+        <a href="{{ url_for('dashboard') }}" class="logo">Beauty Wave</a>
+        <div>
+            <a href="{{ url_for('dashboard') }}">Salões</a>
+            <a href="{{ url_for('servicos') }}">Serviços</a>
+            <a href="{{ url_for('agendar') }}" class="cta-button">Agendar</a>
+            <a href="{{ url_for('perfil') }}">Meu Perfil</a>
+            <a href="{{ url_for('index') }}">Sair</a>
+        </div>
     </div>
 
     <div style="padding: 20px;">
