@@ -22,7 +22,8 @@
             ou
         </div>
 
-        <form action="{{ url_for('dashboard') }}" method="POST">
+        <!-- Formulário principal unificado -->
+        <form action="{{ url_for('login') }}" method="POST">
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
             
@@ -31,7 +32,10 @@
 
             <button type="submit" class="main-button">Entrar</button>
         </form>
-        <p style="text-align: center; margin-top: 15px;">Não tem conta? <a href="{{ url_for('cadastro') }}">Crie uma agora</a></p>
+
+        <p style="text-align: center; margin-top: 15px;">
+            Não tem conta? <a href="{{ url_for('cadastro') }}">Crie uma agora</a>
+        </p>
     </div>
 </body>
 </html>
