@@ -392,3 +392,52 @@ input[type="tel"]:focus, input[type="date"]:focus, input[type="time"]:focus, sel
         margin: 5px;
     }
 }
+
+/* ===============================================
+    13. Classes Utilitárias (Para limpar o HTML) 
+===============================================
+*/
+
+/* Cor de texto (para parágrafos informativos) */
+.text-muted {
+    color: var(--text-light);
+}
+
+/* Links especiais (que não são o padrão do .form-link) */
+.link-primary {
+    color: var(--primary-color); 
+    font-weight: 600;
+}
+
+/* Tamanhos de Fonte */
+.fs-large {
+    font-size: 1.5em;
+}
+
+/* Pesos de Fonte */
+.fw-600 {
+    font-weight: 600;
+}
+.fw-bold {
+    font-weight: bold;
+}
+
+/* Preço (de servicos.html) */
+.price-text {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Larguras */
+.w-200 {
+    width: 200px;
+}
+
+/* Margens */
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mb-20 { margin-bottom: 20px; }
+.m-0 { margin: 0; }
+.p-0 { padding: 0; }
