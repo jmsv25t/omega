@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Beauty Wave</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="dark-section" style="text-align: center; padding: 10px;">
+    <header class="dark-section text-center">
         <h1 class="header-title">Cadastro</h1>
-    </div>
+    </header>
     
     <div class="form-container">
         <form action="{{ url_for('cadastro') }}" method="POST">
@@ -39,14 +40,12 @@
             <label for="localizacao">Localização (Cidade/Estado):</label>
             <input type="text" id="localizacao" name="localizacao">
 
-            <button type="submit" class="main-button">Cadastrar e Entrar</button>
+            <button type="submit" class="main-button button-cta">Cadastrar e Entrar</button>
         </form>
 
-        <p style="text-align: center; margin-top: 15px;">
-            Já é cadastrado? <a href="{{ url_for('login') }}">Faça Login</a>
+        <p class="form-link">
+            Já é cadastrado? <a href="{{ url_for('login') }}" style="color: var(--primary-color); font-weight: 600;">Faça Login</a>
         </p>
     </div>
 </body>
 </html>
-
-
