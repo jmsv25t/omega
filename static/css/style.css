@@ -1,37 +1,39 @@
-/* static/css/style.css */
+/* static/css/style.css - Versão Final com Design Moderno */
 
-/* Definições de Cores */
+/* 1. Definições de Cores e Variáveis (Aprimoradas) */
 :root {
     --primary-color: #000000;      /* Preto */
     --secondary-color: #FFFFFF;    /* Branco */
     --accent-color: #FFD700;       /* Dourado */
-    --text-light: #555555;         /* Cinza (para pequenos detalhes) */
+    --text-light: #AAAAAA;         /* Cinza Mais Suave (para detalhes e bordas) */
+    --soft-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra Suave para Elevação */
 }
 
-/* Estilo Básico */
+/* 2. Estilo Básico e Tipografia */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', 'Arial', sans-serif; /* Fonte moderna (simulada) */
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-/* Estilo do Cabeçalho e Títulos */
+/* 3. Estilo do Cabeçalho e Títulos */
 .header-title {
     font-family: 'Georgia', serif;
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2.8em;
+    font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* Estilo para Fundo Escuro com Dourado */
+/* 4. Estilo para Fundo Escuro com Dourado */
 .dark-section {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 20px 0;
+    padding: 40px 0; /* Mais padding */
 }
 
 .dark-section .header-title {
@@ -42,108 +44,152 @@ body {
     color: var(--accent-color);
 }
 
-/* Estilo dos Botões e Formulários */
-.form-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--text-light);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.main-button {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-}
-
-.main-button:hover {
-    background-color: #333333;
-}
-
-/* Botões Sociais (Pequenos) */
-.social-buttons button {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 0.9em;
-    width: 30%; /* Para que fiquem pequenos */
-}
-
-/* Layout do Dashboard */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid var(--text-light);
-    border-top: 5px solid var(--accent-color); /* Detalhe Dourado */
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-/* style.css (Adicionar ao final) */
-
-/* Navigation Bar (Preto com Dourado) */
+/* 5. Navigation Bar (Modernizada) */
 .navbar {
-    background-color: var(--primary-color); /* Preto */
-    padding: 15px 20px;
+    background-color: var(--primary-color);
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .logo {
-    color: var(--accent-color); /* Dourado */
-    font-size: 1.5em;
+    color: var(--accent-color);
+    font-size: 1.6em;
     font-weight: bold;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .navbar a {
-    color: var(--secondary-color); /* Branco */
+    color: var(--secondary-color);
     text-decoration: none;
-    margin-left: 20px;
-    padding: 5px 10px;
-    transition: color 0.3s;
+    margin-left: 25px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-    color: var(--accent-color); /* Dourado no hover */
+    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Botão de Chamada para Ação na Navbar */
 .navbar .cta-button {
     background-color: var(--accent-color);
     color: var(--primary-color) !important;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar .cta-button:hover {
+    background-color: #e6b800; /* Dourado levemente mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+/* 6. Estilo dos Formulários (Modernizado) */
+.form-container {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--soft-shadow);
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid var(--text-light);
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus, select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.3);
+}
+
+/* 7. Estilo dos Botões Principais (Modernizado) */
+.main-button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 16px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.15em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.main-button:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* 8. Botões Sociais (Pequenos - Layout Flex) */
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-buttons button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--text-light);
+    padding: 12px;
+    cursor: pointer;
+    font-size: 0.95em;
+    flex-grow: 1;
+    border-radius: 6px;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.social-buttons button:hover {
+    background-color: #f4f4f4;
+    border-color: var(--accent-color);
+}
+
+/* 9. Layout do Dashboard (CSS Grid com Cards Modernos) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--soft-shadow);
+    border-left: 5px solid var(--accent-color); /* Detalhe Dourado lateral */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
