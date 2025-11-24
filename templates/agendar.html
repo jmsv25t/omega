@@ -22,7 +22,7 @@
     <main class="container-form">
         <div class="form-container">
             <h2>Agendamento Rápido</h2>
-            <form action="{{ url_for('perfil') }}" method="GET">
+            <form action="{{ url_for('agendar') }}" method="POST">
                 <label for="salao">Selecione o Salão:</label>
                 <select id="salao" name="salao" required>
                     <option value="">-- Escolha um Salão --</option>
