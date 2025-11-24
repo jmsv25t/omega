@@ -24,28 +24,27 @@
         <p>Este é o espaço para **especificações** e detalhes dos salões cadastrados.</p>
 
         <div class="grid-container">
-            <div class="card" onclick="window.location.href='{{ url_for('funcionarios') }}';">
+            <div class="card">
                 <h3>Salão Brilho Dourado ✨</h3>
-                <p style="color: var(--text-light);">Local: Centro, São Paulo</p>
+                <p class="text-muted">Local: Centro, São Paulo</p>
                 <p>Especialidade: Cabelos e Penteados.</p>
-                <p class="accent-text" style="font-weight: 600; margin-top: 10px;">Ver Funcionários &rarr;</p>
+                <a href="{{ url_for('funcionarios') }}" class="accent-text fw-600 mt-10">Ver Funcionários &rarr;</a>
             </div>
 
-            <div class="card" onclick="window.location.href='{{ url_for('funcionarios') }}';">
+            <div class="card">
                 <h3>Nail Art Profissional 💅</h3>
-                <p style="color: var(--text-light);">Local: Jardins, São Paulo</p>
+                <p class="text-muted">Local: Jardins, São Paulo</p>
                 <p>Especialidade: Manicure e Pedicure.</p>
-                <p class="accent-text" style="font-weight: 600; margin-top: 10px;">Ver Funcionários &rarr;</p>
+                <a href="{{ url_for('funcionarios') }}" class="accent-text fw-600 mt-10">Ver Funcionários &rarr;</a>
             </div>
 
-            <div class="card" onclick="window.location.href='{{ url_for('funcionarios') }}';">
+            <div class="card">
                 <h3>Barbearia Clássica 🧔</h3>
-                <p style="color: var(--text-light);">Local: Vila Mariana, São Paulo</p>
+                <p class="text-muted">Local: Vila Mariana, São Paulo</p>
                 <p>Especialidade: Barba e Corte Masculino.</p>
-                <p class="accent-text" style="font-weight: 600; margin-top: 10px;">Ver Funcionários &rarr;</p>
+                <a href="{{ url_for('funcionarios') }}" class="accent-text fw-600 mt-10">Ver Funcionários &rarr;</a>
             </div>
         </div>
     </main>
 </body>
 </html>
-
