@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Wave | O seu destino de Beleza</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="dark-section" style="text-align: center; padding: 50px 20px;">
-        <h1 class="header-title">Beauty Wave</h1>
-        
-        <p style="font-size: 1.2em;">
-            "Sua beleza, nossa onda. <span class="accent-text">Transforme-se!</span>"
-        </p>
-        <br>
-        
-        <p>Já tem cadastro? Faça seu login.</p>
-        <a href="{{ url_for('login') }}"><button class="main-button" style="width: 250px;">Fazer Login</button></a>
-        <p style="margin-top: 15px;">Novo por aqui? Cadastre-se.</p>
-        <a href="{{ url_for('cadastro') }}"><button class="main-button" style="width: 250px; background-color: var(--accent-color); color: var(--primary-color);">Criar Conta</button></a>
-    </div>
+    
+    <main>
+        <section class="hero-section">
+            
+            <div class="hero-image-container">
+                <div class="image-backdrop">
+                    <img src="https://via.placeholder.com/400x400/333333/FFFFFF?text=Beauty+Wave" alt="Logo ou Imagem do Salão">
+                </div>
+            </div>
 
-    <div style="text-align: center; padding: 20px;">
-        <h2>Sobre o Beauty Wave</h2>
-        <p>
-            O Beauty Wave conecta você aos melhores salões e profissionais de beleza, 
-            permitindo agendamentos fáceis e descobertas de novos estilos. 
-            É a plataforma onde a qualidade encontra a conveniência.
-        </p>
-    </div>
+            <div class="hero-text-container">
+                <h1 class="main-title">Beauty Wave</h1>
+                
+                <p class="subtitle">"Sua beleza, nossa onda. <span style="color: var(--accent-color);">Transforme-se!</span>"</p>
+                
+                <p class="description">
+                    Conectamos você aos melhores salões e profissionais de beleza, 
+                    permitindo agendamentos fáceis e descobertas de novos estilos. 
+                    É a plataforma onde a qualidade encontra a conveniência.
+                </p>
+                
+                <hr class="divider">
+                
+                <div class="hero-buttons">
+                    <a href="{{ url_for('login') }}" class="main-button button-fixed-width">Fazer Login</a>
+                    <a href="{{ url_for('cadastro') }}" class="main-button button-cta button-fixed-width">Criar Conta</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
 </body>
 </html>
+
