@@ -24,28 +24,36 @@
         <p>Confira nossa gama de serviços de beleza. Clique para agendar!</p>
         
         <div class="grid-container">
-            <div class="card" onclick="window.location.href='{{ url_for('agendar') }}';">
-                <h3>Corte Feminino</h3>
+            <div class="card">
+                <h3>
+                    <a href="{{ url_for('agendar') }}">Corte Feminino</a>
+                </h3>
                 <p>Detalhe: Corte moderno e lavagem inclusa.</p>
-                <p class="accent-text" style="font-size: 1.2em; font-weight: 600;">R$ 80,00</p>
+                <p class="accent-text price-text">R$ 80,00</p>
             </div>
             
-            <div class="card" onclick="window.location.href='{{ url_for('agendar') }}';">
-                <h3>Coloração Completa</h3>
+            <div class="card">
+                <h3>
+                    <a href="{{ url_for('agendar') }}">Coloração Completa</a>
+                </h3>
                 <p>Detalhe: Coloração e hidratação.</p>
-                <p class="accent-text" style="font-size: 1.2em; font-weight: 600;">R$ 180,00</p>
+                <p class="accent-text price-text">R$ 180,00</p>
             </div>
 
-            <div class="card" onclick="window.location.href='{{ url_for('agendar') }}';">
-                <h3>Manicure Simples</h3>
+            <div class="card">
+                <h3>
+                    <a href="{{ url_for('agendar') }}">Manicure Simples</a>
+                </h3>
                 <p>Detalhe: Esmaltação e remoção de cutículas.</p>
-                <p class="accent-text" style="font-size: 1.2em; font-weight: 600;">R$ 35,00</p>
+                <p class="accent-text price-text">R$ 35,00</p>
             </div>
 
-            <div class="card" onclick="window.location.href='{{ url_for('agendar') }}';">
-                <h3>Design de Sobrancelhas</h3>
+            <div class="card">
+                <h3>
+                    <a href="{{ url_for('agendar') }}">Design de Sobrancelhas</a>
+                </h3>
                 <p>Detalhe: Desenho com henna.</p>
-                <p class="accent-text" style="font-size: 1.2em; font-weight: 600;">R$ 55,00</p>
+                <p class="accent-text price-text">R$ 55,00</p>
             </div>
         </div>
     </main>
